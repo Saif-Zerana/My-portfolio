@@ -29,7 +29,7 @@ I would love to get your feedback on my project. Please visit my [Portfolio Webs
 ## Contact
 Feel free to reach out if you have any questions or suggestions:
 - **Email**: [MY-Email](mailto:saifzerana@gmail.com)
-- **LinkedIn**: [Saif Abdelrhman Zerana]((https://www.linkedin.com/in/saif-zerana/))
+- **LinkedIn**: [Saif Abdelrhman Zerana](https://www.linkedin.com/in/saif-zerana/)
 
 Thank you for visiting my project! 🚀
 
