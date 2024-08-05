@@ -83,7 +83,7 @@ html {
 }
 
 body,
-[type=submit] {
+[type="submit"] {
   font-size: 1.6rem;
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -204,6 +204,7 @@ header::before {
   display: flex;
   gap: 1rem;
   margin-left: auto;
+  align-items: center;
 }
 
 .toggle__title {
@@ -250,7 +251,7 @@ header::before {
 /* Bio */
 .bio {
   -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
+  column-gap: 7.4rem;
   row-gap: 0;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -386,11 +387,11 @@ header::before {
   border-radius: 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.4rem 3rem;
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   transition: all 0.3s ease 0s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .skill__item:hover {
@@ -461,9 +462,9 @@ header::before {
   max-width: 100%;
   aspect-ratio: 4/3;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: left;
-     object-position: left;
+  object-position: left;
 }
 
 .project__details {
@@ -609,7 +610,7 @@ header::before {
 .contact {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 10rem;
-       column-gap: 10rem;
+  column-gap: 10rem;
   align-items: center;
   row-gap: 6rem;
 }
@@ -724,11 +725,25 @@ html:has(.toggle__checkbox:checked) {
   .section {
     grid-template-columns: 1fr;
   }
+  .navigation__link,
+  .toggle__title {
+    font-size: 15px;
+  }
+
   .bio__pic-content {
+    display: flex;
     grid-row: 1;
-    justify-self: center;
+    justify-content: center;
     margin-bottom: 4rem;
   }
+  .bio__pic {
+    width: 75%;
+  }
+  .bio__pic-content::before {
+    width: 75%;
+    height: 70rem;
+  }
+
   .skill__list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -749,15 +764,20 @@ html:has(.toggle__checkbox:checked) {
   .header::before {
     z-index: 0;
   }
+  .bio__pic-content::before {
+    width: 100%;
+    height: 70rem;
+  }
   .bio__pic {
     width: 100%;
   }
   .skill__list {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
-  .bio__pic-content::before {
-    height: 60rem;
+  .skill__content{
+    align-self: center;
   }
+
   .burger-menu {
     display: flex;
     flex-direction: column;
@@ -788,7 +808,7 @@ html:has(.toggle__checkbox:checked) {
   .navigation {
     position: absolute;
     width: 100vw;
-    background-color: var(--color-white);
+    background-color: var(--color-background);
     top: 0;
     padding: 3rem 0;
     border-bottom: 0.1rem solid var(--color-text);
@@ -802,4 +822,4 @@ html:has(.toggle__checkbox:checked) {
     z-index: 1;
   }
 }
-/* End Responsive *//*# sourceMappingURL=style.css.map */
+/* End Responsive */ /*# sourceMappingURL=style.css.map */
